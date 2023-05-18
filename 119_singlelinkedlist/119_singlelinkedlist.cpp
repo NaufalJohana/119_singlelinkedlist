@@ -151,4 +151,13 @@ int main() {
 				system("Pause");
 				system("cls");
 				break;
+			case 2:
+				if (listEmpty())
+				{
+					cout << "List Kosong" << endl;
+					system("Pause");
+					system("cls");
+					break;
+				}
+
 			
