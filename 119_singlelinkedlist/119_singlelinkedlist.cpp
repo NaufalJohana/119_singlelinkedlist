@@ -49,7 +49,7 @@ void addNode() {
 	previous->next = nodeBaru;
 }
 
-boo1 serachNode(int nim, Node* current, Node* previous) {
+bool searchNode(int nim, Node* current, Node* previous) {
 	previous = START;
 	current = START;
 	while (current != NULL && nim > current->noMhs)
@@ -70,4 +70,15 @@ boo1 serachNode(int nim, Node* current, Node* previous) {
 	{
 		return false;
 	}
+}
+
+bool deleteNode(int nim) {
+	Node* current = START;
+	Node* previous = START;
+	if (searchNode(nim, previous, current) == false)
+		return false;
+	previous->next = current->next;
+	if (current == START)
+		START = current->next;
+	return true;
 }
