@@ -134,8 +134,8 @@ int main() {
 	do
 	{
 		try
-		{ 
-	
+		{
+
 
 			cout << "1. Tambah Data" << endl;
 			cout << "2. Hapus data" << endl;
@@ -177,6 +177,14 @@ int main() {
 			case 4:
 				searchData();
 				break;
+			case 5:
+				break;
+			default:
+				cout << "Pilihan tidak ada" << endl;
+				break;
+			}
+		}
+		catch
 
 
 			
